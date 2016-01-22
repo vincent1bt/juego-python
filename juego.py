@@ -5,6 +5,11 @@ import random
 
 sep = "-"*35
 
+
+"""
+    Diccionario:
+    La key("piedra") le gana a los valores dentro de ella("lagarto tijera")
+"""
 dic = { 
         "piedra": "lagarto tijera",
         "papel": "piedra spock",
@@ -24,6 +29,7 @@ def think():
     sleep(0.4)
 
 while True:
+    # raw_input() en python2
     user_choice = input("Elige piedra, papel, tijera, spock o lagarto: ")
     
     if user_choice not in dic:
